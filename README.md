@@ -13,15 +13,15 @@ Following language instructions to navigate in unseen environments is a challeng
 
 ## Requirements
 
-1. Install Matterport3D simulators: follow instructions [here](https://github.com/peteanderson80/Matterport3DSimulator). We use the latest version instead of v0.1.
+1. Install Matterport3D simulators: follow instructions [here](https://github.com/peteanderson80/Matterport3DSimulator). We use the latest version.
 ```
 export PYTHONPATH=Matterport3DSimulator/build:$PYTHONPATH
 ```
 
 2. Install requirements:
 ```setup
-conda create --name vlnduet python=3.8.5
-conda activate vlnduet
+conda create --name vlnduet python=3.8.0
+conda activate KERM
 pip install -r requirements.txt
 ```
 
@@ -45,6 +45,6 @@ bash run_reverie.sh # (run_soon.sh, run_r2r.sh, run_r4r.sh)
 
 Use pseudo interative demonstrator to fine-tune the model:
 ```finetune
-cd map_nav_src
+cd knowledge_nav_src
 bash scripts/run_reverie.sh # (run_soon.sh, run_r2r.sh)
 ```
